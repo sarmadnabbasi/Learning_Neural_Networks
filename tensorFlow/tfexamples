@@ -1,0 +1,70 @@
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+from tensorflow.python.framework import ops
+
+
+def extrafunc():
+    print(tf.__version__)
+    a = tf.constant(2)
+    b = tf.constant(11)
+    c = tf.Variable(a * b, name="loss")
+    print(c)
+    init = tf.global_variables_initializer()
+    x = tf.placeholder(tf.int64, name='x')
+
+    with tf.Session() as session:  # Create a session and print the output
+        session.run(init)  # Initializes the variables
+        print(session.run(2 * x, feed_dict={x: 3}))
+        print(session.run(c))  # Prints the loss
+        session.close()
+        tf.nn.relu()
+
+
+def sigmoid(z):
+    x = tf.placeholder(tf.float32, name="x")
+    sigm = tf.sigmoid(x)
+    with tf.Session() as session:
+        result = session.run(sigm, feed_dict={x: z})
+
+    return result
+
+
+def cost(logits, labels):
+    z = tf.placeholder(tf.float32)
+    y = tf.placeholder(tf.float32)
+    cost = tf.nn.sigmoid_cross_entropy_with_logits(logits=z, labels=y)
+    sess = tf.Session()
+    cost = sess.run(cost, feed_dict={z: logits, y: labels})
+    sess.close()
+
+    return cost
+
+
+def one_hot_matrix(labels, C):
+    C = tf.constant(C, name="C")
+    one_hot_matrix = tf.one_hot(indices=labels, depth=C, axis = 0)
+    sess = tf.Session()
+    one_hot = sess.run(one_hot_matrix)
+    sess.close()
+
+    return one_hot
+
+
+def ones(shape):
+    ones = tf.ones(shape, name = "ones")
+    sess = tf.Session()
+    ones = sess.run(ones)
+    sess.close()
+    return ones
+
+
+
+
+labels = np.array([1,2,3,0,2,1])
+one_hot = one_hot_matrix(labels, C = 4)
+print ("one_hot = \n" + str(one_hot))
+
+print ("ones = " + str(ones([3])))

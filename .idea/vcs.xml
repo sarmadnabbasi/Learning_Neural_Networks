@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Dqn_TicTacToe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tic-Tac-Toe-Gym_Environment-master/gym-tictac4/gym-tictactoe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gym" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gym-tictactoe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/keras-rl" vcs="Git" />
+  </component>
+</project>

@@ -2,6 +2,14 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Convolution_Neural_Network" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/kerasHappySad" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CartPoleTutorial" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/segmentation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gym-foo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gym-foo/gym_foo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gym-foo/gym_foo/envs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FrameCapture" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="inheritedJdk" />

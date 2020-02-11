@@ -43,7 +43,7 @@ def nn(n_h, X, Y, learning_rate, num_iterations, print_cost=False):
         ## Cost ##
         cost = -1 / m * np.sum(Y * np.log(a2) + (1 - Y) * np.log(1 - a2))
 
-        ## Backward propagation
+        ## Backward propagation ##
         dz2 = a2 - Y
         dw2 = 1 / m * np.dot(dz2, a1.T)
         db2 = 1 / m * np.sum(dz2, axis=1, keepdims=True)
