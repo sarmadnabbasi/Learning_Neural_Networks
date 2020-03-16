@@ -10,9 +10,12 @@
       <sourceFolder url="file://$MODULE_DIR$/gym-foo/gym_foo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/gym-foo/gym_foo/envs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/FrameCapture" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gym" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml-agents" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml-agents/environments_my/3DBall" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (Learning_Neural_Networks) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

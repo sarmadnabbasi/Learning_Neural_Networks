@@ -7,5 +7,6 @@
     <mapping directory="$PROJECT_DIR$/gym" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/gym-tictactoe" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/keras-rl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ml-agents" vcs="Git" />
   </component>
 </project>
